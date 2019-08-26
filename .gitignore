@@ -1,2 +1,9 @@
 # Project exclude paths
 /node_modules/
+/package-lock.json
+/.idea/.gitignore
+/.idea/angular-fk3ztp.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml

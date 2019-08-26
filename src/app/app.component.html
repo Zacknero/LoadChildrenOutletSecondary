@@ -1,10 +1,10 @@
 <ngx-loading [show]="isSpinnerVisibile$ | async"></ngx-loading>
+<h2>Try Load children into second outlet</h2>
+The cars button is with normal load children
+<br>
 <button [routerLink]="'/cars'">Cars</button>
-<button [routerLink]="'/prova'">Prova</button>
+<bR>
+The Simpson button is with Lazy Loading
+<br>
+<button [routerLink]="'/prova'">Simpson</button>
 <router-outlet></router-outlet>
-<!--<div>
-	<button [routerLink]="[{outlets: {minor: ['contest']}}]">Contest</button>
-	<button [routerLink]="[{outlets: {minor: ['contact']}}]">Contact</button>
-</div>-->
-<!--
-<router-outlet name="minor"></router-outlet>-->
