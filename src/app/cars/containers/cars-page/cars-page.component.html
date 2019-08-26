@@ -1,0 +1,9 @@
+<p>Cars list</p>
+
+<ng-container *ngIf="(cars$ | async) as cars; else loader">
+	<app-car-preview *ngFor="let car of cars" [car]="car"></app-car-preview>
+</ng-container>
+
+<ng-template #loader>
+	Loding cars data...
+</ng-template>

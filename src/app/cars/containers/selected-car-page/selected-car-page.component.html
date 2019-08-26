@@ -1,0 +1,11 @@
+<app-car-detail *ngIf="(car$ | async) as car; else loader" [car]="car"></app-car-detail>
+
+<ng-template #loader>
+	Loding car data...
+</ng-template>
+
+<div>
+	<button [routerLink]="['../../cars/figliolo', {outlets: {minor: ['contest']}}]">Contest</button>
+</div>
+
+<app-figliolo></app-figliolo>

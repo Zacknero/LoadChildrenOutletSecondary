@@ -1,0 +1,9 @@
+<h1>
+  (Homer) lazy-child works!
+</h1>
+
+<button [routerLink]="['/lazy-child/homer',{outlets: {major: ['bart']}}]">Load Bart</button>
+<br>
+<button (click)="showLisa()">Load Lisa</button>
+
+<router-outlet name="major"></router-outlet>
