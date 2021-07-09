@@ -1,11 +1,11 @@
-<p>
-  prova works!
-</p>
+<h3>
+  Simpson Module (child)
+</h3>
 
 In this page you can load the child of homer (bart) with second button in lazy module or load homer and after load bart with primary button
 <br>
-<button [routerLink]="'../lazy-child/homer'">Lazy Child (Homer)</button>
+<button [routerLink]="'../homer/homer'">Lazy Child (Homer)</button>
 <br>
-<button [routerLink]="['../lazy-child/homer',{outlets: {major: ['bart']}}]">
+<button [routerLink]="['../homer/homer',{outlets: {major: ['bart']}}]">
   Lazy Child + Outlet with First Comp (the child of Homer)
 </button>

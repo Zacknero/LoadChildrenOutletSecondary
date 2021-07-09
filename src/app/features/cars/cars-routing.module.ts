@@ -5,8 +5,8 @@ import {CarsPageComponent} from './containers/cars-page/cars-page.component';
 import {SelectedCarPageComponent} from './containers/selected-car-page/selected-car-page.component';
 import {CarResolver} from './services/car.resolver';
 import {FiglioloComponent} from "./components/figliolo/figliolo.component";
-import {ContestComponent} from "../core/containers/contest/contest.component";
-import {ContactFormComponent} from "../core/containers/contact-form/contact-form.component";
+import {ContestComponent} from "../../core/containers/contest/contest.component";
+import {ContactFormComponent} from "../../core/containers/contact-form/contact-form.component";
 
 const routes: Routes = [
     {

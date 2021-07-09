@@ -1,23 +1,23 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
-import {LazyChildComponent} from "./lazy-child.component";
-import {FirstCompComponent} from './first-comp/first-comp.component';
-import { SecondCompComponent } from './second-comp/second-comp.component';
+import {HomerComponent} from "./homer.component";
+import {BartCompComponent} from './bart-comp/bart-comp.component';
+import { LisaCompComponent } from './lisa-comp/lisa-comp.component';
 
 const routes: Routes = [
     {
         path: 'homer',
-        component: LazyChildComponent,
+        component: HomerComponent,
         children: [
             {
                 path: 'bart',
-                component: FirstCompComponent,
+                component: BartCompComponent,
                 outlet: 'major'
             },
             {
                 path: 'lisa',
-                component: SecondCompComponent,
+                component: LisaCompComponent,
                 outlet: 'major'
             }
         ]
@@ -26,9 +26,9 @@ const routes: Routes = [
 
 @NgModule({
     declarations: [
-        LazyChildComponent,
-        FirstCompComponent,
-        SecondCompComponent
+        HomerComponent,
+        BartCompComponent,
+        LisaCompComponent
     ],
     imports: [
         CommonModule,
@@ -38,5 +38,5 @@ const routes: Routes = [
         RouterModule
     ]
 })
-export class LazyChildModule {
+export class HomerModule {
 }

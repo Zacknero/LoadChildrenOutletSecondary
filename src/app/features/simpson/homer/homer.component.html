@@ -1,0 +1,9 @@
+<h1>
+  Homer module when contain the router-outlet secondary. Here load child of Homer.
+</h1>
+
+<button [routerLink]="['/homer/homer',{outlets: {major: ['bart']}}]">Load Bart</button>
+<br>
+<button (click)="showLisa()">Load Lisa</button>
+
+<router-outlet name="major"></router-outlet>
